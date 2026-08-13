@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#171A1F"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部工具栏 -->
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#0F1014">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="12dp"
+            android:scaleType="center"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/btnChatList"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/btnBack"
+            android:gravity="center"
+            android:paddingHorizontal="8dp"
+            android:text="会话"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btnSaveChat"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/btnModelSwitch"
+            android:gravity="center"
+            android:paddingHorizontal="12dp"
+            android:text="保存"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btnModelSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/ic_launcher_background"
+            android:backgroundTint="#1AFFFFFF"
+            android:gravity="center"
+            android:paddingHorizontal="12dp"
+            android:text="Qwen VL Flash"
+            android:textColor="#DDFFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- 提示文字 -->
+    <TextView
+        android:id="@+id/tvPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A000000"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="按住话筒说话"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <!-- 消息列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="12dp"
+        android:paddingBottom="8dp" />
+
+    <!-- 底部输入栏 -->
+    <LinearLayout
+        android:id="@+id/inputBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0F1014"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp">
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_launcher_background"
+            android:backgroundTint="#1AFFFFFF"
+            android:gravity="center_vertical"
+            android:hint="请输入问题"
+            android:maxLines="4"
+            android:paddingHorizontal="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#66FFFFFF"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/btnMic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/ic_launcher_background"
+            android:backgroundTint="#1AFFFFFF"
+            android:padding="12dp"
+            android:scaleType="center"
+            android:src="@android:drawable/ic_btn_speak_now"
+            app:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/ic_launcher_background"
+            android:backgroundTint="#EE5F37"
+            android:padding="12dp"
+            android:scaleType="center"
+            android:src="@android:drawable/ic_menu_send"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

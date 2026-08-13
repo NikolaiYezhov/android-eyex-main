@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#0F1014" android:orientation="vertical">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="56dp"
+        android:paddingHorizontal="16dp" android:background="#1A1A1E">
+        <TextView android:id="@+id/btnBack" android:layout_width="40dp"
+            android:layout_height="40dp" android:layout_centerVertical="true"
+            android:gravity="center" android:text="Back"
+            android:textColor="#FFFFFF" android:textSize="14sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_centerInParent="true" android:text="Test Simulator"
+            android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold" />
+    </RelativeLayout>
+    <TextView android:id="@+id/tvSimStatus" android:layout_width="match_parent"
+        android:layout_height="40dp" android:gravity="center"
+        android:text="Mock mode disabled" android:textColor="#FF5252"
+        android:textSize="14sp" android:background="#1AFF5252" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:padding="16dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:text="Test without Bluetooth"
+            android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="Test all features offline"
+            android:textColor="#888888" android:textSize="13sp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:orientation="horizontal">
+            <Button android:id="@+id/btnSimEnableMock" android:layout_width="0dp"
+                android:layout_height="48dp" android:layout_weight="1"
+                android:layout_marginEnd="4dp" android:backgroundTint="#4CAF50"
+                android:text="Mock ON" android:textColor="#FFFFFF"
+                android:textSize="14sp" app:cornerRadius="24dp" />
+            <Button android:id="@+id/btnSimDisableMock" android:layout_width="0dp"
+                android:layout_height="48dp" android:layout_weight="1"
+                android:layout_marginStart="4dp" android:backgroundTint="#FF5252"
+                android:text="Mock OFF" android:textColor="#FFFFFF"
+                android:textSize="14sp" app:cornerRadius="24dp" />
+        </LinearLayout>
+        <Button android:id="@+id/btnSimEnterApp" android:layout_width="match_parent"
+            android:layout_height="48dp" android:layout_marginTop="12dp"
+            android:backgroundTint="#2196F3" android:text="Enter App (Mock Mode)"
+            android:textColor="#FFFFFF" android:textSize="14sp" app:cornerRadius="24dp" />
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#333333" android:layout_marginVertical="20dp" />
+        <Button android:id="@+id/btnSimScan" android:layout_width="match_parent"
+            android:layout_height="48dp" android:backgroundTint="#333333"
+            android:text="Scan / Pair Device" android:textColor="#FFFFFF"
+            android:textSize="14sp" app:cornerRadius="24dp" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_nav_home"
+        android:title="首页" />
+
+    <item
+        android:id="@+id/nav_ai"
+        android:icon="@drawable/ic_nav_ai"
+        android:title="AI助手" />
+
+    <item
+        android:id="@+id/nav_album"
+        android:icon="@drawable/ic_nav_album"
+        android:title="相册" />
+
+    <item
+        android:id="@+id/nav_mine"
+        android:icon="@drawable/ic_nav_mine"
+        android:title="我的" />
+</menu>

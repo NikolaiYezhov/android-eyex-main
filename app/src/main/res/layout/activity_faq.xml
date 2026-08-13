@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFFFFF" android:fitsSystemWindows="true" android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="60dp" android:background="#151515" android:paddingHorizontal="16dp">
+        <ImageView android:id="@+id/btnBackFaq" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true" android:padding="8dp" android:src="@android:drawable/ic_menu_revert" app:tint="#FFFFFF" />
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="智能眼镜常见问题 (FAQ)" android:textColor="#000000" android:textSize="22sp" android:textStyle="bold" android:layout_marginBottom="20dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="声音没有从眼镜里播放出来？" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="10dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="① 确认眼镜是否正常开机并连接手机\n② 查看手机系统蓝牙设置是否有连接眼镜\n③ 尝试重新解绑并配对眼镜\n④ 重启眼镜和手机蓝牙，并重新绑定眼镜" android:textColor="#666666" android:textSize="14sp" android:lineSpacingExtra="6dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="智能眼镜需要连接手机吗？" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="24dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="部分功能（如同步数据、接打电话等）需通过蓝牙/Wi-Fi连接手机APP，但基础功能（如拍照、录音）连接过APP可独立使用。" android:textColor="#666666" android:textSize="14sp" android:lineSpacingExtra="6dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

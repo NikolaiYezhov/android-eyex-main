@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1014"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="0dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:cardBackgroundColor="#202126"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/tvDeviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="M02S_922A"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已连接"
+                    android:textColor="#4CAF50"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" · "
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvBattery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="58%"
+                    android:textColor="#4CAF50"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="快捷功能"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnCardPhoto"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#193166"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+            <TextView android:id="@+id/tvPhotoText" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:text="拍照" android:textColor="#FFFFFF" android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnCardVideo"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#1C5535"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+            <TextView android:id="@+id/tvVideoText" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:text="录像" android:textColor="#FFFFFF" android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnCardAudio"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#794320"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+            <TextView android:id="@+id/tvAudioText" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:text="录音" android:textColor="#FFFFFF" android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="AI 辅助功能"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnAiVoice"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#193166"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:text="语音助手" android:textColor="#FFFFFF" android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnAiNav"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#1C5535"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:text="语音导航" android:textColor="#FFFFFF" android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnAiGame"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#794320"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:text="游戏辅助" android:textColor="#FFFFFF" android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="AI 工作区"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        app:cardBackgroundColor="#141720"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_launcher_background"
+                android:backgroundTint="#1C1F28"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/tabIdentify"
+                    android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="3dp"
+                    android:background="@drawable/ic_launcher_background" android:backgroundTint="#FFFFFF"
+                    android:gravity="center" android:text="识图" android:textColor="#000000" android:textSize="14sp" android:textStyle="bold"
+                    android:clickable="true" android:focusable="true" />
+                <TextView
+                    android:id="@+id/tabTranslate"
+                    android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+                    android:gravity="center" android:text="翻译" android:textColor="#666666" android:textSize="14sp"
+                    android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackground" />
+                <TextView
+                    android:id="@+id/tabFavorite"
+                    android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+                    android:gravity="center" android:text="收藏" android:textColor="#444444" android:textSize="14sp"
+                    android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackground" />
+                <TextView
+                    android:id="@+id/tabShare"
+                    android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+                    android:gravity="center" android:text="分享" android:textColor="#444444" android:textSize="14sp"
+                    android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackground" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivAIShow"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvAIResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:textColor="#D0D0D0"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <Button
+                    android:id="@+id/btnStartAi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="6"
+                    android:backgroundTint="#E55F37"
+                    android:text="开始识图"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:padding="0dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    app:cornerRadius="12dp" />
+
+                <Button
+                    android:id="@+id/btnAiCollection"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="4"
+                    android:backgroundTint="#232733"
+                    android:text="查看收藏"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp"
+                    android:padding="0dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:insetLeft="0dp"
+                    android:insetRight="0dp"
+                    android:singleLine="true"
+                    app:cornerRadius="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
