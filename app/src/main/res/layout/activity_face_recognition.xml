@@ -4,13 +4,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0F1014"
+    android:fitsSystemWindows="true"
     android:orientation="vertical">
-    <RelativeLayout android:layout_width="match_parent" android:layout_height="60dp" android:paddingHorizontal="16dp">
-        <TextView android:id="@+id/btnBack" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true" android:gravity="center" android:text="&lt; Back" android:textColor="#FFFFFF" android:textSize="14sp" />
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="Face Recognition" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingHorizontal="16dp">
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="12dp"
+            android:scaleType="center"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="#FFFFFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="人脸识别"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </RelativeLayout>
-    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="20dp">
-        <TextView android:id="@+id/tvResult" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="20dp" android:text="Ready" android:textColor="#FFFFFF" android:textSize="16sp" android:background="#2C2C2E" />
-        <Button android:id="@+id/btnStart" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="30dp" android:backgroundTint="#007AFF" android:text="Start Recognition" android:textColor="#FFFFFF" android:textSize="16sp" app:cornerRadius="28dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="准备就绪"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="#2C2C2E" />
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#007AFF"
+            android:text="开始识别"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:cornerRadius="28dp" />
     </LinearLayout>
 </LinearLayout>

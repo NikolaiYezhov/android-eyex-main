@@ -59,7 +59,7 @@
                         android:id="@+id/tvEyebrow"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BILLIARDS ASSIST"
+                        android:layout_marginTop="10dp"
                         android:textColor="#C7FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
@@ -87,7 +87,8 @@
                         android:text="上传球桌照片，获取击球建议"
                         android:textColor="#FFFFFF"
                         android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 

@@ -55,18 +55,12 @@
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="GAME ASSIST"
-                        android:textColor="#C7FFFFFF"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
                         android:text="选择一个游戏场景"
+                        android:layout_marginLeft="15dp"
                         android:textColor="#FFFFFF"
                         android:textSize="26sp"
                         android:textStyle="bold" />
@@ -165,7 +159,6 @@
                         android:id="@+id/faceCircle"
                         android:layout_width="54dp"
                         android:layout_height="54dp"
-                        android:layout_marginTop="6dp"
                         android:gravity="center"
                         android:text="F"
                         android:textColor="#FFFFFF"

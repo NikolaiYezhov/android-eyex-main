@@ -2,6 +2,7 @@
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -13,13 +14,13 @@ class FaceRecognitionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_face_recognition)
         supportActionBar?.hide()
-        findViewById<TextView>(R.id.btnBack).setOnClickListener { finish() }
+        findViewById<View>(R.id.btnBack).setOnClickListener { finish() }
         tvResult = findViewById(R.id.tvResult)
         btnStart = findViewById(R.id.btnStart)
         btnStart.setOnClickListener {
-            btnStart.isEnabled = false; tvResult.text = "Capturing..."
+            btnStart.isEnabled = false; tvResult.text = "正在拍摄…"
             Handler(Looper.getMainLooper()).postDelayed({
-                tvResult.text = "Face captured! (mock)"
+                tvResult.text = "人脸已捕获！"
                 btnStart.isEnabled = true
             }, 2000)
         }
