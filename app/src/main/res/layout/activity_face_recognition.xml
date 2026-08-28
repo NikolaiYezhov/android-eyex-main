@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -6,6 +6,8 @@
     android:background="#0F1014"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
+
+    <!-- 顶部工具栏 -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -29,12 +31,26 @@
             android:textSize="18sp"
             android:textStyle="bold" />
     </RelativeLayout>
+
+    <!-- 内容区域 -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
         android:padding="20dp">
+
+        <!-- 用于显示眼镜拍照返回的图片 -->
+        <ImageView
+            android:id="@+id/ivFaceImage"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#1AFFFFFF"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
         <TextView
             android:id="@+id/tvResult"
             android:layout_width="match_parent"
@@ -45,6 +61,7 @@
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:background="#2C2C2E" />
+
         <Button
             android:id="@+id/btnStart"
             android:layout_width="match_parent"
